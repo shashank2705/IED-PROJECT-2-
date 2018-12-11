@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		
+		Enter Data: <input type="text" id="myText">
+		<button onclick="add_data()">Submit</button>
+		
+		<button onclick="rem_data()">remove</button>
+		<br>
+		<ol id="demo" type="i"></ol>
+		<ol id="del" type="i"></ol>
+		<script>
+			function add_data() {
+    			x = document.getElementById("myText").value;
+    			document.getElementById("demo").innerHTML += '<li>' + x + '</li>';	
+			}
+			function rem_data() {
+    			x = document.getElementById("myText").value;
+    			document.getElementById("del").innerHTML -= '<li>' + x + '</li>';	
+			}
+		</script>
+	</body>
+</html>
